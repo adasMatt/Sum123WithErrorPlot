@@ -51,6 +51,7 @@
 		7F98884525E41AE60051295A /* summationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F98884325E41AE60051295A /* summationClass.swift */; };
 		7F98884625E41AE60051295A /* summationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F98884325E41AE60051295A /* summationClass.swift */; };
 		7F98884725E41AE60051295A /* summationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F98884325E41AE60051295A /* summationClass.swift */; };
+		7F98885125E433F30051295A /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 7F98885025E433F30051295A /* CorePlot */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F98885125E433F30051295A /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +290,9 @@
 				7F9887C825E415860051295A /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
+			packageProductDependencies = (
+				7F98885025E433F30051295A /* CorePlot */,
+			);
 			productName = "Tests macOS";
 			productReference = 7F9887C625E415860051295A /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -826,6 +831,11 @@
 			productName = CorePlot;
 		};
 		7F98882F25E4170B0051295A /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F98882725E416510051295A /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+		7F98885025E433F30051295A /* CorePlot */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7F98882725E416510051295A /* XCRemoteSwiftPackageReference "core-plot" */;
 			productName = CorePlot;

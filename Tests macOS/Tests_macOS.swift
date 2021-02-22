@@ -31,26 +31,23 @@ class Tests_macOS: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    
-    func testS1() throws {
-        //test S1 gives correct answer with N = 2 terms (meaning 2N = 4)
-        let plotDataModel = PlotDataClass(fromLine: true)
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //test S1 gives correct answer with n = 1 term, this isn't the actual sum, it's just the first term
+    func testS1FirstTerm() throws {
                 
         let s1Calculator = summationClass()
         
-        //my littlen is littlen or big N? Oops?
-        s1Calculator.sum1(littlen: 2) = plotDataModel
+        let firstTermInS1 = s1Calculator.sum1(littlen: 1)
         
-        //x = pi/2
-        //let piOverTwo = Double.pi / 2.0
-        //the error after 12th term equals 1.0000000000000002
-        //let sin90 = sinCalculator.calculate_sin_x(x: piOverTwo)
-        
-        //XCTAssertEqual(sin90, 1.0, accuracy: 1.0E-10)
-        
+        XCTAssertEqual(firstTermInS1, -0.5, accuracy: 1.0E-10)
         
     }
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.
